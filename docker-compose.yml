@@ -3,9 +3,10 @@ services:
   contact-backend:
     build: .
     ports:
-      - "3000:3000"
+      - "${PORT:-3000}:3000"
     volumes:
       - .:/usr/src/app
     environment:
       - NODE_ENV=production
+      - PORT=${PORT:-3000}
     restart: unless-stopped
