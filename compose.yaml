@@ -1,6 +1,6 @@
 services:
   contactbackend:
-    image: contactbackend
+    image: digilab-absensi
     build:
       context: .
       dockerfile: ./Dockerfile
